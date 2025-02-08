@@ -1,0 +1,5 @@
+
+git checkout MrCoopper-Branch (Usar en caso de no estar dentro de la branch MrCoopper-Branch)
+git add .
+git commit -m "Actualización"
+git push -u origin MrCoopper-Branch
