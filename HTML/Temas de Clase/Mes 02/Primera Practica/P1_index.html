@@ -13,71 +13,215 @@
 <body>
 <!-- |-------------------------------------------------------------------------------------------------------------------------------------------------------------------------| -->
 
-    <!-- Barra de Navegación -->
-    <nav class="navbar navbar-expand-lg bg-body-tertiary">
-        <div class="container-fluid">
-          <a class="navbar-brand" href="#">E-cum</a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+  <!-- Barra de Navegacion -->
+  <nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="#"></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                 <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">Home</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Productos</a>
-              </li>
-              <li class="nav-item dropdown">
-                  <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                      Productos
-                </a>
-                <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="#">Action</a></li>
-                  <li><a class="dropdown-item" href="#">Another action</a></li>
-                  <li><hr class="dropdown-divider"></li>
-                  <li><a class="dropdown-item" href="#">Something else here</a></li>
-                </ul>
-            </li>
-        </ul>
+                    <a class="nav-link active" aria-current="page" href="#">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Productos</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Productos
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">Action</a></li>
+                        <li><a class="dropdown-item" href="#">Another action</a></li>
+                        <li><hr class="dropdown-divider"></li>
+                        <li><a class="dropdown-item" href="#">Something else here</a></li>
+                    </ul>
+                </li>
+                <!-- Enlace para abrir el modal de inicio de sesion -->
+                <li class="nav-item">
+                    <a class="nav-link" href="#" data-bs-toggle="modal" data-bs-target="#loginModal">Iniciar sesión</a>
+                </li>
+            </ul>
             <form class="d-flex" role="search">
-              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-              <button class="btn btn-outline-success" type="submit">Search</button>
+                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-success" type="submit">Search</button>
             </form>
-          </div>
         </div>
-      </nav>
-
-<!-- |-------------------------------------------------------------------------------------------------------------------------------------------------------------------------| -->
-
-    <div id="carouselExample" class="carousel slide" data-bs-ride="carousel">
-        <div class="carousel-indicators">
-        <button type="button" data-bs-target="#carouselExample" data-bs-slide-to="0" class="active"></button>
-        <button type="button" data-bs-target="#carouselExample" data-bs-slide-to="1"></button>
-        <button type="button" data-bs-target="#carouselExample" data-bs-slide-to="2"></button>
-        </div>
-    
-        <div class="carousel-inner">
-        <div class="carousel-item active">
-            <img class="d-block w-100" src="images/196388141425-xbox-control-gold-shadow-1.jpg" alt="First slide">
-        </div>
-        <div class="carousel-item">
-            <img class="d-block w-100" src="images/51ZUlhG3n-L._AC_UF1000,1000_QL80_.jpg" alt="Second slide">
-        </div>
-        <div class="carousel-item">
-            <img class="d-block w-100" src="images/sw_1_225.jpg" alt="Third slide">
-        </div>
-        </div>
-    
-        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
-        <span class="carousel-control-prev-icon"></span>
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
-        <span class="carousel-control-next-icon"></span>
-        </button>
     </div>
+  </nav>
 
 <!-- |-------------------------------------------------------------------------------------------------------------------------------------------------------------------------| -->
+
+  <!-- Carrusel de productos -->
+  <div id="carouselExample" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-indicators">
+      <button type="button" data-bs-target="#carouselExample" data-bs-slide-to="0" class="active"></button>
+      <button type="button" data-bs-target="#carouselExample" data-bs-slide-to="1"></button>
+      <button type="button" data-bs-target="#carouselExample" data-bs-slide-to="2"></button>
+      </div>
+  
+      <div class="carousel-inner">
+      <div class="carousel-item active">
+          <img class="d-block w-100" src="images/196388141425-xbox-control-gold-shadow-1.jpg" alt="First slide">
+      </div>
+      <div class="carousel-item">
+          <img class="d-block w-100" src="images/51ZUlhG3n-L._AC_UF1000,1000_QL80_.jpg" alt="Second slide">
+      </div>
+      <div class="carousel-item">
+          <img class="d-block w-100" src="images/sw_1_225.jpg" alt="Third slide">
+      </div>
+      </div>
+  
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon"></span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+      <span class="carousel-control-next-icon"></span>
+      </button>
+  </div>
+
+<!-- |-------------------------------------------------------------------------------------------------------------------------------------------------------------------------| -->
+
+  <div class="container my-8">
+    <div class="row">
+        <!-- Producto 1 -->
+        <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
+            <div class="card">
+                <img src="images/61iQEKO1eTL._AC_UF894,1000_QL80_.jpg" class="card-img-top" alt="Producto 1">
+                <div class="card-body">
+                    <h5 class="card-title">Producto 1</h5>
+                    <p class="card-text"></p>
+                    <a href="#" class="btn btn-primary">Añadir al carrito</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Producto 2 -->
+        <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
+            <div class="card">
+                <img src="images/71wAS1VFDVL.jpg" class="card-img-top" alt="Producto 2">
+                <div class="card-body">
+                    <h5 class="card-title">Producto 2</h5>
+                    <p class="card-text"></p>
+                    <a href="#" class="btn btn-primary">Añadir al carrito</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Producto 3 -->
+        <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
+            <div class="card">
+                <img src="images/71wxx7P8RGL._AC_UF894,1000_QL80_.jpg" class="card-img-top" alt="Producto 3">
+                <div class="card-body">
+                    <h5 class="card-title">Producto 3</h5>
+                    <p class="card-text"></p>
+                    <a href="#" class="btn btn-primary">Añadir al carrito</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Producto 4 -->
+        <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
+            <div class="card">
+                <img src="images/81Yp9shPcWL.jpg" class="card-img-top" alt="Producto 4">
+                <div class="card-body">
+                    <h5 class="card-title">Producto 4</h5>
+                    <p class="card-text"></p>
+                    <a href="#" class="btn btn-primary">Añadir al carrito</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Producto 5 -->
+        <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
+          <div class="card">
+              <img src="images/3024291.jpg" class="card-img-top" alt="Producto 4">
+              <div class="card-body">
+                  <h5 class="card-title">Producto 5</h5>
+                  <p class="card-text"></p>
+                  <a href="#" class="btn btn-primary">Añadir al carrito</a>
+              </div>
+            </div>
+        </div>
+
+        <!-- Producto 6 -->
+        <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
+          <div class="card">
+              <img src="images/Dream-Controller-Xbox-One-Wireless-Controller-PC-Custom-Xbox-One-Controller-for-PC-Xbox-Remote-Controller_f7b6e557-fd8b-45af-adad-5ccdf4ed2638.39.jpg" class="card-img-top" alt="Producto 4">
+              <div class="card-body">
+                  <h5 class="card-title">Producto 6</h5>
+                  <p class="card-text"></p>
+                  <a href="#" class="btn btn-primary">Añadir al carrito</a>
+              </div>
+            </div>
+        </div>
+
+        <!-- Producto 7 -->
+        <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
+          <div class="card">
+              <img src="images/w_800_h_800_fit_pad.jpg" class="card-img-top" alt="Producto 4">
+              <div class="card-body">
+                  <h5 class="card-title">Producto 7</h5>
+                  <p class="card-text"></p>
+                  <a href="#" class="btn btn-primary">Añadir al carrito</a>
+              </div>
+            </div>
+        </div>
+
+        <!-- Producto 8 -->
+        <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
+          <div class="card">
+              <img src="images/7140CQtT8RL.jpg" class="card-img-top" alt="Producto 4">
+              <div class="card-body">
+                  <h5 class="card-title">Producto 8</h5>
+                  <p class="card-text"></p>
+                  <a href="#" class="btn btn-primary">Añadir al carrito</a>
+              </div>
+            </div>
+        </div>
+    </div>
+  </div>
+
+<!-- |-------------------------------------------------------------------------------------------------------------------------------------------------------------------------| -->
+
+  <!-- Modal de inicio de sesion -->
+  <div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="loginModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="loginModalLabel">Iniciar sesión</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <form>
+            <!-- Campo de correo electronico -->
+            <div class="mb-3">
+              <label for="email" class="form-label">Correo electrónico</label>
+              <input type="email" class="form-control" id="email" placeholder="Ingrese su correo" required>
+            </div>
+
+            <!-- Campo de contraseña -->
+            <div class="mb-3">
+              <label for="password" class="form-label">Contraseña</label>
+              <input type="password" class="form-control" id="password" placeholder="Ingrese su contraseña" required>
+            </div>
+
+            <!-- Checkbox para recordar sesion -->
+            <div class="form-check">
+              <input type="checkbox" class="form-check-input" id="rememberMe">
+              <label class="form-check-label" for="rememberMe">Recordar mi sesión</label>
+            </div>
+          </form>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+          <button type="submit" class="btn btn-primary">Iniciar sesión</button>
+        </div>
+      </div>
+    </div>
+  </div>
 
 </body>
 </html>
