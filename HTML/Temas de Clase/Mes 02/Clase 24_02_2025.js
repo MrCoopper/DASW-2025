@@ -6,12 +6,6 @@ let main = function showMessage(text) {
 main("Hola mundo")
 */
 
-
-
-
-
-
-
 /*
 // ---------------------------------------------------------------------------------------------------------------------------------|
 
@@ -63,12 +57,6 @@ generateReport(nameStudent, gradeStudent,
 // ---------------------------------------------------------------------------------------------------------------------------------|
 */
 
-
-
-
-
-
-
 // Suma de dos numeros
 let sum = (a, b) => a + b;
 console.log(`La suma de los numeros es ${sum(1, 3)}`);
@@ -115,7 +103,6 @@ let generatePassword = (length) => {
   return pass;
 };
 console.log(`La contraseña generada es ${generatePassword(37)}`);
-
 
 /*
 Explicación de la función generatePassword:
