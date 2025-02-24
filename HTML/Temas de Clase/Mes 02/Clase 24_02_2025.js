@@ -72,17 +72,14 @@ generateReport(nameStudent, gradeStudent,
 // Suma de dos numeros
 let sum = (a, b) => a + b;
 console.log(`La suma de los numeros es ${sum(1, 3)}`);
-// Esta función toma dos números como argumentos y devuelve su suma.
 
 // Calcular el doble de un numero
 let double = (n) => n * 2;
 console.log(`El doble del numero es ${double(4)}`);
-// Esta función toma un número como argumento y devuelve el doble de ese número.
 
 // Calculadora de descuento
 let discount = (prize, dis) => prize - prize * (dis / 100);
 console.log(`El precio con descuento es ${discount(100, 20)}`);
-// Esta función toma el precio original y el porcentaje de descuento, y devuelve el precio después de aplicar el descuento.
 
 // Contador de Vocales
 let contarVocales = (text) => {
@@ -106,7 +103,6 @@ console.log(
     "Hola mundo"
   )}`
 );
-// Esta función toma un texto como argumento y devuelve el número de vocales en el texto.
 
 // Generadora de contraseñas
 let generatePassword = (length) => {
@@ -119,7 +115,6 @@ let generatePassword = (length) => {
   return pass;
 };
 console.log(`La contraseña generada es ${generatePassword(37)}`);
-// Esta función toma un número como argumento y devuelve una contraseña aleatoria de esa longitud.
 
 
 /*
