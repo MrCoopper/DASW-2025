@@ -6,15 +6,15 @@ let first_Var = 10;
 const first_ConstVAR = 1;
 
 // Forma de poder imprimir algo con un format
-console.log(`El valor se la primera variable es de ${first_Var}`)
+// console.log(`El valor se la primera variable es de ${first_Var}`)
 
-/*
+// console.log(3 == "3")
+// console.log(3 === "3")
+// console.log(3 === 3)
+
+
 function ejemploFunction () {
-    if (true) {
-        let x = 10;
-    }
-    console.log(x);
+    console.log("Hola Mundo")
 }
 
 ejemploFunction();
-*/
