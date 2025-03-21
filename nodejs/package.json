@@ -1,0 +1,15 @@
+{
+  "name": "testnodejs",
+  "version": "0.0.1",
+  "description": "prueba para ver como funciona npm init",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Haciendo pruebas de NodeJS\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "chalk": "^5.4.1",
+    "express": "^4.21.2"
+  }
+}
