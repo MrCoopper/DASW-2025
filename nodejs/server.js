@@ -1,18 +1,33 @@
-const http = require('http');
+const { error } = require('console');
+const express = require('express');
+const fs = require('fs');
 
-const hostname = '127.0.0.1';
-const port = 3000;
+const app = express();
+const port = 5005;
 
-const server = http.createServer((req, res) => {
-    res.statusCode = 200;
-    res.setHeader('Content-Type', 'text/plain');
-    res.end('Hello World\n');
-});
+app.get('/products/:id', (req, res) => {
+    const products = JSON.parse(fs.readFileSync('products.json', 'utf-8'));
+    const product = products.find(product => product.id === parseInt(req.params.id));
+    if(!product) {
+        return res.status(404).json({error: 'Product not found'});
+    }
+    res.json(product);
+})
 
-server.listen(port, hostname, () => {
-    console.log(`Server running at http://${hostname}:${port}/`);
-});
+app.get('/products', (req, res) => {
+    const queryParams = req.query;
+})
 
+app.listen(port, () => {
+    console.log(`El servidor esta corriendo en el puerto ${port}`);
+})
 
 // instalar paquete     npm install <paquete>
 // desinstalar paquete  npm uninstall <paquete>
+
+// Explicacion del codigo:
+// 1. Importamos los modulos necesarios
+// 2. Creamos el servidor
+// 3. Definimos el puerto
+// 4. Definimos la ruta para obtener un producto por su id
+// 5. Iniciamos el servidor

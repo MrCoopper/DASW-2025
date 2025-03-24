@@ -1,0 +1,5 @@
+[
+    { "id": 1, "name": "pluma", "price": 10 },
+    { "id": 2, "name": "cuaderno", "price": 50 },
+    { "id": 3, "name": "lapiz", "price": 5 }
+]
