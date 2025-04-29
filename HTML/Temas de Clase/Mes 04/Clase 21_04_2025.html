@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <p id="contador">0</p>
+    <p id="contador botones">0</p>
+    <button id="inc">Incrementar</button>
+    <button id="dec">Decrementar</button>
+
+    <script>
+        let count = 0;
+        let contButton = 0
+        const contador = document.getElementById('contador');
+        const contBotones = document.getElementById('contador botones');
+
+        document.getElementById('inc').onclick = () => {
+          contador.textContent = ++count;
+          contBotones.textContent = ++count;
+        };
+        document.getElementById('dec').onclick = () => {
+          contador.textContent = --count;
+          contBotones.textContent = ++count;
+        };
+      </script>
+</body>
+</html>

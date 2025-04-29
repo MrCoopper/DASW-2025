@@ -1,0 +1,42 @@
+[
+  {
+    "id": "1",
+    "title": "Camiseta de Algodón",
+    "description": "Camiseta cómoda de algodón 100%",
+    "pricePerUnit": 15.99,
+    "category": "Ropa",
+    "stock": 50,
+    "imageUrl": "https://example.com/camiseta.jpg",
+    "unit": "pieza"
+  },
+  {
+    "id": "2",
+    "title": "Pantalón Deportivo",
+    "description": "Pantalón de deporte para ejercicio",
+    "pricePerUnit": 25.99,
+    "category": "Ropa",
+    "stock": 30,
+    "imageUrl": "https://example.com/pantalon.jpg",
+    "unit": "pieza"
+  },
+  {
+    "id": "3",
+    "title": "Zapatos de Running",
+    "description": "Zapatos cómodos para correr",
+    "pricePerUnit": 59.99,
+    "category": "Calzado",
+    "stock": 20,
+    "imageUrl": "https://example.com/zapatos.jpg",
+    "unit": "par"
+  },
+  {
+    "id": "4",
+    "title": "Nuevo Producto",
+    "description": "Descripción del nuevo producto",
+    "pricePerUnit": 100.5,
+    "category": "Electrónica",
+    "stock": 30,
+    "imageUrl": "https://example.com/nuevo-producto.jpg",
+    "unit": "pieza"
+  }
+]

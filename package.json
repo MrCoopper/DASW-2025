@@ -1,5 +1,24 @@
 {
   "dependencies": {
-    "cors": "^2.8.5"
-  }
+    "cors": "^2.8.5",
+    "mongodb": "^6.16.0"
+  },
+  "name": "visual-studio",
+  "version": "1.0.0",
+  "description": "Repositorio de clase de \"Desarrollo de Aplicaciones y Servicios Web\"",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MrCoopper/DASW-2025.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MrCoopper/DASW-2025/issues"
+  },
+  "homepage": "https://github.com/MrCoopper/DASW-2025#readme"
 }
